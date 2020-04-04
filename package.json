@@ -1,0 +1,34 @@
+{
+    "name": "my-webpack-2020",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "webpack-dev-server --config build-utils/webpack.config.js --env.env=development",
+        "build": "webpack --config build-utils/webpack.config.js --env.env=production",
+        "build:analyze": "npm run build -- --env.addon=bundleanalyze --env.addon=bundlevisualizer",
+        "host": "http-server build",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "^7.9.0",
+        "@babel/preset-env": "^7.9.0",
+        "babel-loader": "^8.1.0",
+        "clean-webpack-plugin": "^3.0.0",
+        "dotenv-webpack": "^1.7.0",
+        "html-webpack-plugin": "^4.0.4",
+        "http-server": "^0.12.1",
+        "webpack": "^4.42.1",
+        "webpack-bundle-analyzer": "^3.6.1",
+        "webpack-cli": "^3.3.11",
+        "webpack-dev-server": "^3.10.3",
+        "webpack-merge": "^4.2.2",
+        "webpack-visualizer-plugin": "^0.1.11"
+    },
+    "dependencies": {
+        "sydinh-node-package": "^1.0.5"
+    }
+}
